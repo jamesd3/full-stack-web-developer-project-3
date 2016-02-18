@@ -1,0 +1,31 @@
+<html>
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+<h1> Welcome to the Senior Care Directory! </h1>
+
+<p> To add your senior care service to our database, please follow the steps below!</p>
+
+</br>
+
+<h2> Step 1: Service Name </h2>
+
+<form action="{{url_for('newMenuItem', restaurant_id=restaurant_id )}}" method = 'POST'>
+
+<p>Name:</p>
+
+<input type='text' size='30' name='name' placeholder='Name of Service'>
+
+</br>
+
+</br>
+
+
+<input type='submit' value='Continue to Step 2'>
+
+</form>
+
+</body>
+</html>

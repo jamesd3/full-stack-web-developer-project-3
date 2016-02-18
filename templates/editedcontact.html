@@ -1,0 +1,53 @@
+<html>
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+<h1>Edit {{i.name}} </h1>
+
+<form action="{{url_for('editContact', service_id=service_id, contact_id=i.id)}}" method = 'post'>
+
+<p>Phone:</p>
+
+<input type='text' size='30' name='phone' placeholder="{{i.phone}}">
+
+<p>Email Address:</p>
+
+<input type='text' size='30' name='email' placeholder="{{i.email}}">
+
+<p>Website:</p>
+
+<input type='text' size='30' name='website' placeholder="{{i.website}}">
+
+<p>Address:</p>
+
+<input type='text' size='30' name='address' placeholder="{{i.address}}">
+
+<p>City:</p>
+
+<input type='text' size='30' name='city' placeholder="{{i.city}}">
+
+<p>State:</p>
+
+<input type='text' size='30' name='state' placeholder="{{i.state}}">
+
+<p>Zip Code:</p>
+
+<input type='text' size='30' name='zipcode' placeholder="{{i.zipcode}}">
+
+</br>
+
+</br>
+
+</br>
+
+
+<input type='submit' value='Edit'>
+
+<a href = '{{url_for('serviceDisplay', service_id = i.service_id)}}'>Cancel </a>
+
+</form>
+
+</body>
+</html>

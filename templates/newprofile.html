@@ -1,0 +1,41 @@
+<html>
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+<h1> Step 3: Profile Information </h1>
+
+<p>This is the final step! Add some details about your service and describe a price range of your services compared to others around you.</p>
+
+<form action="{{url_for('newMenuItem', restaurant_id=restaurant_id )}}" method = 'POST'>
+
+<p>Description:</p>
+
+<input type='text' size='30' name='Description' placeholder="Write about your community here.">
+
+<p>Lowest Price Range:</p>
+
+<input type="radio" name="pr_min" value="$" checked> $
+<input type="radio" name="pr_min" value="$$"> $$
+<input type="radio" name="pr_min" value="$$$"> $$$
+<input type="radio" name="pr_min" value="$$$$"> $$$$
+
+<p>Highest Price Range:</p>
+
+<input type="radio" name="pr_max" value="$"> $
+<input type="radio" name="pr_max" value="$$"> $$
+<input type="radio" name="pr_max" value="$$$"> $$$
+<input type="radio" name="pr_max" value="$$$$" checked> $$$$
+
+</br>
+
+</br>
+
+
+<input type='submit' value='Complete My Profile'>
+
+</form>
+
+</body>
+</html>

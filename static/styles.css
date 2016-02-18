@@ -1,0 +1,98 @@
+body            { 
+	font-family: sans-serif; 
+	width: 90%;
+	margin: 10px 50px;
+}
+
+h1, h2, h3, h4       { 
+	color: DodgerBlue;
+}
+
+h1, h2          { 
+	font-family: 'Georgia', serif; margin: 0;
+	padding-left: 20px;
+}
+
+h2              { 
+	font-size: 1.2em; 
+}
+
+p, dd, dt               { 
+	color: #000000;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold;
+	color: #000;
+}
+
+
+.top {
+	background-color:#FFFFFF;
+}
+
+.logo {
+}
+
+.title {
+}
+
+.detailbox {
+	float: left;
+	clear: left;
+	margin: 20px;
+}
+
+.menu-bar {
+	color:#010101;
+	font-weight: bold;
+	border-top: 2px solid #e67e00;
+	border-bottom: 2px solid #e67e00;
+	margin: 0px 20px 25px;
+}
+
+.main-area {
+	background-color: #F2F2F2;
+}
+
+.pane {
+	position:absolute; left: 25%; 
+	border: 2px solid;
+    border-radius: 25px; 
+    padding: 10px; 
+    margin: 5px; 
+    border-color: #999999; 
+    background-color: #333333 
+}
+
+.editdeletepane {
+
+}
+
+.streetview {
+	float: left;
+	clear: left, bottom;
+	margin: 20px;
+}
+
+.button-1 {
+    background-color: #4CAF50;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.button-1:hover {
+    background-color: #FFF;
+    border: 2px #000;
+    color: black;
+
+.flash          { 
+	background: #cee5F5; 
+}

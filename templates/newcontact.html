@@ -1,0 +1,51 @@
+<html>
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+<h1> New Contact Information </h1>
+
+<p> Please add your contact information below: 
+
+<form action="{{url_for('newMenuItem', restaurant_id=restaurant_id )}}" method = 'POST'>
+
+<p>Phone:</p>
+
+<input type='text' size='30' name='phone' placeholder="1-XXX-XXX-XXXX">
+
+<p>Email Address:</p>
+
+<input type='text' size='30' name='email' placeholder="xxxx@xyz.com">
+
+<p>Website:</p>
+
+<input type='text' size='30' name='website' placeholder="http://www.example.com/"
+
+<p>Address:</p>
+
+<input type='text' size='30' name='address' placeholder="1234 Example Lane">
+
+<p>City:</p>
+
+<input type='text' size='30' name='city' placeholder="Los Angeles">
+
+<p>State:</p>
+
+<input type='text' size='30' name='state' placeholder="CA">
+
+<p>Zip Code:</p>
+
+<input type='text' size='30' name='zipcode' placeholder="12345">
+
+</br>
+
+</br>
+
+
+<input type='submit' value='Continue to Add Profile Details'>
+
+</form>
+
+</body>
+</html>
